@@ -1,0 +1,43 @@
+@import "/src/sass/variable";
+
+.rte {
+  width: 100%;
+  max-width: 100%;
+
+  &__container{
+    background-color: $primary-background;
+    
+    border: {
+      width: 1px;
+      style: solid;
+      color: $primary-foreground;
+      top-left-radius:8px;
+      top-right-radius:8px
+    }
+
+    &-toolbox {
+      margin: 5px;
+      display: flex;
+    }
+  }
+
+  &__inputcontent {
+    font-family: Helvetica,Arial,sans-serif;
+    display: block;
+    resize: vertical;
+    width: 100%;
+    max-width: 100%;
+    padding: 7px;
+    height: 150px;
+    outline: none;
+
+    border: {
+        width: 1px;
+        style: solid;
+        color: $primary-foreground;
+        top: {
+          width: 0;
+        }
+    }
+  }
+}

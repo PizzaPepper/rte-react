@@ -1,0 +1,20 @@
+@import "/src/sass/variable";
+
+.option {
+  background: none;
+  border: none;
+  height: 28px;
+  width: 28px;
+  margin: 2px;
+  opacity: .3;
+
+  &--active {
+    border: 1px solid black;
+  }
+
+  &:hover{
+    background-color: $button-max;
+    cursor: pointer;
+    opacity: 1;
+  }
+}
